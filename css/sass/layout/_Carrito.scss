@@ -1,0 +1,103 @@
+#BtnCarrito {
+    border-radius: $border-radius-media;
+    padding: 0.3em;
+    margin-right: 1em;
+    color: $violeta;
+    background: white;
+    border-color: $violeta;
+}
+
+.Modal-Contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(20, 17, 17, 0.459);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .5s;
+    visibility: hidden;
+
+    .Modal-Carrito {
+        position: relative;
+        background: rgb(238, 174, 202);
+        background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        border-radius: $border-radius-media;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+        min-width: 500px;
+        padding: 20px;
+        margin-top: -100%;
+        transition: all .5s;
+
+        h3 {
+            font-weight: bold;
+            font-size: $font-size-a-mainnav;
+            color: $black;
+        }
+
+        #CarritoCerrar {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 20px;
+            color: $violeta;
+            border: none;
+            background: none;
+        }
+
+        .productoEnCarrito {
+            background: lightblue;
+            border-radius: $border-radius-media;
+            margin: 1em;
+            padding: 0, 8em;
+            display: flex;
+            justify-content: space-between;
+
+            &:hover:hover {
+                border: solid $violeta 0.1em;
+            }
+
+            p {
+                margin: 0.6em;
+                font-family: $font-tittles;
+                font-weight: bold;
+                font-size: $font-size-a-mainnav;
+            }
+
+            .boton-eliminar {
+                margin: 0.6em;
+                color: red;
+                border: none;
+                background: none;
+            }
+
+        }
+
+        .totalPrecio {
+            font-family: $font-tittles;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        #ConfirmarCompra {
+            border-radius: $border-radius-media;
+            color: $violeta;
+            background: white;
+            border-color: $violeta;
+        }
+    }
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+
+    .Modal-Carrito {
+        margin-top: 0;
+    }
+
+}

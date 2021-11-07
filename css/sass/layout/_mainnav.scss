@@ -1,0 +1,68 @@
+.MainNav {
+    margin: 0.1em 0em;
+    background: rgb(238, 174, 202);
+    background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+    box-shadow: 0 2px 5px $black;
+
+    a {
+        display: inline-block;
+        padding: 0.2em;
+        margin: 0.2em;
+        border-radius: 1em;
+        font-weight: bold;
+        font-size: $font-size-a-mainnav;
+        color: $black;
+        
+        @media only screen and (min-width: 992px) {
+            margin: 1em;
+        }
+
+        &:hover {
+            background-color: $white;
+            transition: 0.8s;
+            transform: scale(1.1);
+        }
+    }
+
+    .LogoMini {
+        margin: o;
+        width: 60px;
+        height: 60px;
+        border: $black outset $border-logo-mainnav;
+        border-radius: $border-radius-logo-mainnav;
+    }
+
+    .navUsuario{
+        padding: 0.2em;
+        font-size: 0.8em;
+        font-weight: bold;
+        color: $black;
+        #cerrarSesion {
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0em;
+            background: none;
+            border: none;
+        }
+        @media only screen and (min-width: 992px) {
+            margin-right: 3em;
+        }
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #MostrarCarrito{
+        #CarritoManual {
+            background-color: whitesmoke;
+            display: none;
+        } 
+    }
+}

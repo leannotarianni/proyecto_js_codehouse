@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>king of the Kongo - Productos</title>
+    <meta name="description" content="indumentaria unisex de la mejor calidad,industria argentina">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="King of the kongo, Kotk, indumentaria, ropa , camperas, buzos, remeras ,pantalones , accesorios">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Js -->
+    <script defer src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/9924e2cbfa.js" crossorigin="anonymous"></script>
+    <script defer src="jquery/jquery_v3.6.0.min.js"></script>
+    <script defer src="Dom.js"></script>
+    <script defer src="stock.js"></script>
+    <script defer src="Modal.js"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="d-none col-lg-12 d-lg-flex justify-content-center">
+                <a href="index.html"><img class="Logo" src="imag/kongo2.jpg" alt="Logo" loading="lazy"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none col-md-12 d-lg-flex justify-content-center">
+                <h1>King of the Kongo</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-none col-md-12 d-lg-flex justify-content-center">
+                <h2 class="Logan">Not a Brand</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main nav -->
+    <nav class="row navbar navbar-expand-lg navbar-light MainNav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="d-lg-none LogoMini" src="imag/kongo2.jpg" alt="Logo"
+                    loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="storelocator.html">Store locator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Aboutus.html">About us</a>
+                    </li>
+                    <li class="nav-item" id="loginForm">
+                        <a class="nav-link active" aria-current="page" href="login.html">Log in</a>
+                    </li>
+                </ul>
+                <div class="d-flex flex-column align-items-center navUsuario">
+                    <p id="nombreUsuario"></p>
+                    <button id="cerrarSesion" href="">Cerrar Sesion</button>
+                </div>
+                <div>
+                    <button type="button" id="BtnCarrito"><i class="fas fa-shopping-cart"></i><span
+                            id="ContadorCarrito">0</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav products -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Indumentaria</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ProductosBuzos.html">Buzos</a></li>
+                            <li><a class="dropdown-item" href="ProductosRemeras.html">Remeras</a></li>
+                            <li><a class="dropdown-item" href="ProductosJoggins.html">Joggins</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Accesorios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Medias</a></li>
+                            <li><a class="dropdown-item" href="#">Gorros</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <main class="container-fluid">
+        <div class="row">
+            <section class="col-12 d-flex flex-column flex-lg-row justify-content-evenly GaleriaProductos">
+                <article class="d-flex flex-column  align-items-center">
+                    <img src="imag/summer2021.jpg" alt="sale">
+                    <p>Sale</p>
+                </article>
+                <article class="d-flex flex-column align-items-center">
+                    <img src="imag/newin.jpg" alt="new in">
+                    <P>New in</P>
+                </article>
+            </section>
+            <section class="col-12 d-flex flex-column justify-content-evenly flex-lg-row GaleriaProductos ">
+                <article class="d-flex flex-column align-items-center">
+                    <img src="imag/w2021.jpg" alt="sping 2021">
+                    <p>w/2021</p>
+                </article>
+                <article class="d-flex flex-column align-items-center">
+                    <img src="imag/sale.jpg" alt="summer 2021">
+                    <p>Comming soon</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <div class="Modal-Contenedor">
+        <div class="Modal-Carrito">
+            <button type="button" id="CarritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <h3>Carrito</h3>
+            <div id="Carrito-Contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="totalPrecio">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="ConfirmarCompra">Confirmar Compra</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark">
+        <nav class="row d-flex flex-column align-items-center justify-content-center flex-md-row">
+            <div class="col-12 col-md-4 LogoFooter d-flex justify-content-center justify-content-md-start mt-2">
+                <a href="index.html" class="LogoFooter">
+                    <img src="imag/kongo.png" alt="home">
+                </a>
+            </div>
+            <div class="col-12 col-md-4 d-flex  justify-content-center">
+                <ul class="Links text-center d-flex">
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="talles.html">Talles</a></li>
+                </ul>
+            </div>
+            <div class="col-12 text-center SocialMedia col-md-4 d-flex flex-column align-items-center">
+                <h2>Social Media</h2>
+                <ul class="d-flex">
+                    <li><a href="https://www.facebook.com/Kingofthekongo/">
+                            <i class="fab fa-facebook Redes--facebook"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/kingofthekongo/">
+                            <i class="fab fa-instagram Redes--instagram"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/kotkongo?lang=es">
+                            <i class="fab fa-twitter Redes--twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-12 text-white text-center">
+                <p>Copyright King of the Kongo - 2021. Todos los derechos reservados. Defensa de las y los consumidores.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

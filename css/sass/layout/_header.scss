@@ -1,0 +1,48 @@
+header {
+    background-image: url(../imag/kongo.png);
+    background-repeat: repeat-x;
+    background-position-y: 3em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgb(63, 94, 251);
+    background: -moz-linear-gradient(90deg, rgba(63, 94, 251, 0.8575805322128851) 30%, rgba(131, 86, 204, 0.8463760504201681) 48%, rgba(252, 70, 107, 0.8071603641456583) 70%);
+    background: -webkit-linear-gradient(90deg, rgba(63, 94, 251, 0.8575805322128851) 30%, rgba(131, 86, 204, 0.8463760504201681) 48%, rgba(252, 70, 107, 0.8071603641456583) 70%);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 0.8575805322128851) 30%, rgba(131, 86, 204, 0.8463760504201681) 48%, rgba(252, 70, 107, 0.8071603641456583) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb", endColorstr="#fc466b", GradientType=1);
+    
+    .Logo {
+        border: $black outset 0.3125em;
+        border-radius: 1.5em;
+        animation-name: Logo;
+        animation-delay: 0s;
+        animation-duration: 3s;
+        margin-top: 2em;
+    }
+    
+    @keyframes Logo {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 100%;    
+        }
+    }
+    
+    h1 {
+        color: $black;
+        font-family: 'Caveat', cursive;
+        font-size: $font-size-h1;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .Logan {
+        color: $black;
+        font-family: 'Caveat', cursive;
+        font-size: $font-size-h2;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+}

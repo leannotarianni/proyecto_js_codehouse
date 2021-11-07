@@ -1,0 +1,23 @@
+.StoreLocator {
+    margin-bottom: 8em;
+    div {
+        iframe {
+            border-radius: 0.5em;
+            width: 400px;
+            height: 250px;
+            @media only screen and (min-width: 992px) {
+                width:600px;
+                height:450px;
+            }
+        }
+    }
+    div {
+        margin-top: 1em;
+        p {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: underline;
+            font-family: 'Caveat', cursive;
+        }
+    }
+}

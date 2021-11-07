@@ -1,0 +1,26 @@
+.Preguntas {
+    margin: 1em 1em 7em 1em;
+    border: $border-media;
+    border-style: solid;
+    background: rgb(238, 174, 202);
+    background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+    font-size: 0.7em;
+    @media only screen and (min-width: 575px) {
+        font-size: 1em;
+    }
+}
+
+.Preguntas__Titulo {
+    color: $black;
+    text-decoration: underline;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+}
+
+.Preguntas__Frecuentes {
+    list-style-position: inside;
+    font-weight: bold;
+}

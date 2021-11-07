@@ -1,0 +1,43 @@
+.GaleriaProductos {
+    article {
+        width: auto;
+        height: auto;
+        margin-top: 4em;
+        margin-bottom: 4em;
+
+        img {
+            width: 90%;
+            height: 90%;
+            border: $black 0.4em;
+            border-style: outset;
+            border-radius: 0.5em;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+
+        .nombreProducto {
+            margin-top: 1em;
+            font-family: 'Caveat', cursive;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        p {
+            font-family: 'Caveat', cursive;
+            font-size: 1.2em;
+            margin-bottom: 0.1em;
+            margin-top: 0.1em;
+        }
+
+        .boton-agregar {
+            border-radius: $border-radius-media;
+            padding: 0.3em;
+            color: $violeta;
+            background: white;
+            border-color: $violeta;
+        }
+    }
+}

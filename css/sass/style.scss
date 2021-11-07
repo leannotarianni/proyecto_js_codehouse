@@ -1,0 +1,36 @@
+@import 'components/colors';
+@import 'components/fonts';
+@import 'components/borders';
+@import 'components/fondo';
+@import "components/mixins";
+@import 'layout/header';
+@import 'layout/mainnav';
+@import 'layout/home';
+@import 'layout/footer';
+@import 'layout/productos';
+@import 'layout/storelocator';
+@import 'layout/aboutus';
+@import 'layout/help';
+@import 'layout/talles';
+@import 'layout/login';
+@import 'layout/contacto';
+@import 'layout/Carrito';
+
+html {
+    color: $black;
+    font-family: 'Roboto', sans-serif;
+    
+    .Subtitutlos {
+        font-size: 2em;
+        color: $black;
+        font-family: 'Caveat', cursive;
+        font-weight: bold;
+        margin: 1em 0em;
+        @media only screen and (min-width: 575px) {
+            font-size: 4em;
+        }
+        @media only screen and (min-width: 992px) {
+            font-size: 6em;
+        }
+    }
+}

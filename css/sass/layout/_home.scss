@@ -1,0 +1,60 @@
+.Fotos {
+    margin: 0.2em 0em 15em 0em;
+    border: $border-carrousel;
+    border-style: outset;
+
+    .carousel-inner {
+        max-height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.Galeria {
+    div {
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            border-color: $black;
+            border: $border-media;
+            border-style: outset;
+            border-radius: 0.5em;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 1s;
+            }
+        }
+
+        p {
+            margin-top: 1.5em;
+            font-family: 'Caveat', cursive;
+            font-weight: bold;
+            font-size: 2.3em;
+        }
+    }
+}
+
+.Video {
+    iframe {
+        width:300px ;
+        height:200px;
+        margin: 15em 5em 15em 5em;
+        border: $border-media;
+        border-style: solid;
+        border-radius: $border-radius-media;
+        object-fit: fill;
+        @media only screen and (min-width: 576px) {
+            width:400px ;
+            height:300px;
+        }
+        @media only screen and (min-width: 767px) {
+            width:500px ;
+            height:300px;
+        }
+        @media only screen and (min-width: 992px) {
+            width:700px ;
+            height:500px;
+        }
+    }
+}

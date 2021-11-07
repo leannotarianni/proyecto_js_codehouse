@@ -1,0 +1,85 @@
+.TalleHombre {
+    div{
+        h3{
+            color: $black;
+            font-family: 'Caveat', cursive;
+            font-weight: bold;
+        }
+        img{
+            height: 10em;
+            width: 10em;
+            border: $border-media;
+            border-radius: $border-radius-media;
+            border-style: solid;
+            @media only screen and (min-width: 575px) {
+                height: 18em;
+                width: 18em;
+            }
+            @media only screen and (min-width: 992px) {
+                height: 20em;
+                width: 20em;
+            }
+        }
+    }
+    div{
+        .table{
+            border: $border-media;
+            border-style: solid;
+            background-color: rgb(238, 174, 202);
+            background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+            width: 12em;
+            height: 7em;
+            @media only screen and (min-width: 767px) {
+                width: 20em;
+                height: 15em;
+            }
+
+        }
+    }
+
+}
+
+.TalleMujer {
+    div{
+        h3{
+            color: $black;
+            font-family: 'Caveat', cursive;
+            font-weight: bold;
+        }
+        img{
+            height: 10em;
+            width: 10em;
+            border: $border-media;
+            border-radius: $border-radius-media;
+            border-style: solid;
+            @media only screen and (min-width: 575px) {
+                height: 18em;
+                width: 18em;
+            }
+            @media only screen and (min-width: 992px) {
+                height: 20em;
+                width: 20em;
+            }
+        }
+    }
+    div{
+        .table{
+            border: $border-media;
+            border-style: solid;
+            background-color: rgb(238, 174, 202);
+            background: -moz-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
+            width: 12em;
+            height: 7em;
+            @media only screen and (min-width: 767px) {
+                width: 20em;
+                height: 15em;
+            }
+        }
+    }
+}

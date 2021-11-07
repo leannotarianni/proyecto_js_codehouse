@@ -1,0 +1,18 @@
+.Login {
+    margin: 1em;
+    div#login{
+        border: $border-small;
+        border-style: solid;
+        border-radius: $border-radius-media;
+    }
+}
+
+.Login__fieldset {
+    border: $border-small;
+    border-style: solid;
+    border-radius: $border-radius-media;
+    #Registrate{
+        display: flex;
+        margin-top: 0.7em;
+    }
+}
